@@ -1,6 +1,7 @@
 package com.funtl.itoken.service.admin.sercive;
 
-import com.funtl.itoken.service.admin.domain.TbSysUser;
+
+import com.funtl.itoken.common.domain.TbSysUser;
 
 public interface AdminService {
     /**

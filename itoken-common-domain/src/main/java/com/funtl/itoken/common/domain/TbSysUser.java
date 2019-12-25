@@ -1,4 +1,4 @@
-package com.funtl.itoken.service.admin.domain;
+package com.funtl.itoken.common.domain;
 
 import java.math.BigDecimal;
 import java.util.Date;

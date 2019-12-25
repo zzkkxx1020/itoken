@@ -2,9 +2,8 @@ package com.funtl.itoken.service.admin.test.service;
 
 
 import com.funtl.itoken.service.admin.ServiceAdminApplication;
-import com.funtl.itoken.service.admin.domain.TbSysUser;
+import com.funtl.itoken.common.domain.TbSysUser;
 import com.funtl.itoken.service.admin.sercive.AdminService;
-import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

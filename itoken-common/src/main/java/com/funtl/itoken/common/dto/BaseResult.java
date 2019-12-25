@@ -65,10 +65,9 @@ public class BaseResult implements Serializable {
     }
 
     @Data
+    @AllArgsConstructor
     public static class Error {
         private String field;
         private String message;
-
-
     }
 }
