@@ -18,17 +18,12 @@ spring:
       test-on-borrow: true
       # MySQL 8.x: com.mysql.cj.jdbc.Driver
       driver-class-name: com.mysql.jdbc.Driver
-  redis:
-    lettuce:
-      pool:
-        max-active: 8
-        max-idle: 8
-        max-wait: -1ms
-        min-idle: 0
-    sentinel:
-      master: mymaster
-      #ip:端口号
-      nodes: 192.168.75.140:26379,
+  thymeleaf:
+      cache: false # 开发时关闭缓存,不然没法看到实时页面
+      mode: LEGACYHTML5 # 用非严格的 HTML
+      encoding: UTF-8
+      servlet:
+        content-type: text/html
 
 
 server:
