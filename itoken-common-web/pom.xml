@@ -24,13 +24,11 @@
             <artifactId>itoken-common</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
-        <!--
         <dependency>
             <groupId>com.funtl</groupId>
             <artifactId>itoken-common-domain</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
-        -->
         <!-- Project End -->
 
         <!-- Spring Boot Begin -->
