@@ -6,10 +6,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-@FeignClient(value = "itekon-service-admin",fallback = AdminServiceFallback.class)
 public interface AdminService {
 
-    @RequestMapping(value = "login", method = RequestMethod.GET)
-    public String login(@RequestParam(value = "loginCode") String loginCode,
-                        @RequestParam(value = "password") String password);
 }

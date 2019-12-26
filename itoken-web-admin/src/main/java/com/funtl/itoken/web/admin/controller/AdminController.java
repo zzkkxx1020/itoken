@@ -17,7 +17,6 @@ public class AdminController {
      */
     @RequestMapping(value = {"","login"}, method = RequestMethod.GET)
     public String login(){
-        adminService.login("","");
         return "index";
     }
 }

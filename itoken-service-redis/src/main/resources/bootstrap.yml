@@ -2,6 +2,6 @@ spring:
   cloud:
     config:
       uri: http://localhost:8888
-      name: itoken-service-redis
+      name: itoken-common-service,itoken-service-redis
       label: master
       profile: dev

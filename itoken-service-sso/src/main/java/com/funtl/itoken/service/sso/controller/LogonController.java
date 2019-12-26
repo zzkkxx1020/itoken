@@ -6,6 +6,7 @@ import com.funtl.itoken.common.utils.MapperUtils;
 import com.funtl.itoken.common.utils.StringUtils;
 import com.funtl.itoken.service.sso.service.LoginService;
 import com.funtl.itoken.service.sso.service.consumer.RedisService;
+import org.checkerframework.checker.units.qual.A;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -50,6 +51,9 @@ public class LogonController {
                 }
             }
         }
+        if (StringUtils.isNotBlank(url)){
+            model.addAttribute("url",url);
+        }
         return "login";
     }
 
@@ -85,4 +89,19 @@ public class LogonController {
         }
         return "redirect:/login ";
     }
+
+    /**
+     * 注销
+     * @param request
+     * @param response
+     * @return
+     */
+    @RequestMapping(value = "loginout",method = RequestMethod.GET)
+    public String loginOut(HttpServletRequest request, HttpServletResponse response, Model model,
+                           @RequestParam(required = false) String url){
+        CookieUtils.deleteCookie(request,response,"token");
+        return login(url,model,request,response);
+    }
+
+
 }
