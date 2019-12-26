@@ -1,5 +1,4 @@
-package com.funtl.itoken.service.admin.mapper;
-
+package com.funtl.itoken.common.mapper;
 
 import com.funtl.itoken.common.domain.TbSysUser;
 import tk.mybatis.mapper.MyMapper;

@@ -20,6 +20,7 @@ import java.util.Date;
 @Getter
 @Setter
 public class BaseDomain implements Serializable {
+
     /**
      * 创建者
      */
