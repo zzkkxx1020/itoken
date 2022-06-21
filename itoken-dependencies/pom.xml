@@ -33,7 +33,7 @@
         <spring-boot-pagehelper.version>1.2.5</spring-boot-pagehelper.version>
 
         <!-- Environment Settings -->
-         <mysql.version>5.1.46</mysql.version>
+         <mysql.version>8.0.28</mysql.version>
          <lombok.version>1.16.18</lombok.version>
          <guava.version>25.1-jre</guava.version>
          <nekohtml.version>1.9.22</nekohtml.version>
